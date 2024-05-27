@@ -42,6 +42,11 @@ nav #part2 #flag img {
   width: 50px;
 }
 
+@media screen and (max-width: 1300px) {
+  nav #part1 a {
+    font-size: 1vw;
+  }
+}
 main {
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -289,4 +294,28 @@ main footer #bottom {
   left: 35%;
   color: white;
   font-size: 1.2em;
+}
+@media screen and (max-width: 1366px) {
+  main #home #sec2 #book {
+    width: 70%;
+    height: 85%;
+  }
+  main #home #sec2 #book #nav {
+    font-size: 1.5em;
+  }
+  main #home #sec2 #book form #radio {
+    background-color: black;
+    margin: 4vh 0px;
+  }
+  main #home #sec2 #book form #dest input {
+    font-size: 1em;
+  }
+  main #home #sec2 #book form #perinfo input {
+    height: 5vh;
+    margin: 1vh;
+    font-size: 1em;
+  }
+  main #home #sec2 #book form button {
+    margin-top: 2vh;
+  }
 }/*# sourceMappingURL=index.css.map */
