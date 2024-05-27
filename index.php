@@ -12,7 +12,7 @@
     <!-- nav bar -->
     <nav>
         <div id="part1">
-            <img src="" alt="logo">
+            <img src="./asset/images/plane.png" alt="logo">
             <a href="">home</a>
             <a href="">about us</a>
             <a href="">help</a>
@@ -20,7 +20,7 @@
 
         <div id="part2">
             <div id="flag">
-                <img src="" alt="flg">
+                <img src="./asset/images/ethiopia.png" alt="flg">
             </div>
 
             <div class="signin">
@@ -32,28 +32,119 @@
 
     <!-- main sectiion of this page-->
     <main>
-        <section id="sec1">
-            <!-- hero section -->
-            <div id="hero">
-                Book Your Perfect flight <br>
-                with x
+        <div id="home">
+            <section id="sec1">
+                <!-- hero section -->
+                <div id="hero">
+                    Book Your Perfect flight <br>
+                    with x
+                </div>
+                <p>
+                    <!-- get your ticket eisly, avoid the hustle of geting tickets
+instade be rady for your flight -->
+                    are you tierd of hastling to get ticket for a flight? we gate you <br>
+                    getting tickets made easy by using X, get your tickets from X <br> and be rady for your flight.
+                </p>
+
+                <a href="#">
+                    <button>discover places</button>
+                </a>
+            </section>
+
+            <section id="sec2">
+                <div id="book">
+                    <!-- navigation for booking card -->
+                    <div id="nav">
+                        <span>
+                            <i class="fa fa-fighter-jet" aria-hidden="true"></i>
+                            flight
+                        </span>
+                        <span>
+                            <i class="fa fa-building-o" aria-hidden="true"></i>
+                            Hotels
+                        </span>
+                    </div>
+
+                    <!-- -->
+                    <form action="" method="post">
+                        <div id="radio">
+                            <input type="radio" name="oneWay" id="oneWay">
+                            <label for="oneWay">one-way</label>
+
+                            <input type="radio" name="twoWay" id="twoWay">
+                            <label for="twoWay"> Two-Way</label>
+                        </div>
+                        <!-- destination and departure inputs-->
+                        <div id="dest">
+                            <input type="text" name="departure" id="departure" placeholder="Departure from">
+                            <input type="text" name="destination" id="destination" placeholder="Destination">
+                        </div>
+                        <!-- -->
+                        <div id="perinfo">
+                            <input type="date" name="depatrureDate" id="depDate" placeholder="Departure Date">
+                            <input type="email" name="email" id="email" placeholder="email">
+                            <input type="tel" name="tel" id="tel" placeholder="phone number">
+                            <input type="text" name="passengers" id="passengers" value="1 adult">
+                            <button type="submit">
+                                Search Flights
+                                <!--<i class="fa fa-fighter-jet" aria-hidden="true"></i>-->
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+
+        </div>
+
+        <!-- explor popular destinations -->
+        <section id="sec3">
+
+        </section>
+
+        <!-- testimonials section -->
+        <section id="sec4">
+            <h2>here is what our coustomers says about us</h2>
+            <div id="container">
+                <?php
+                for ($i = 0; $i < 5; $i++) {
+                ?>
+                    <div id="testimonials">
+                        <div>
+                            <img src="./asset/images/user<?php echo $i; ?>.jpg" alt="profile">
+                            <div id="userinfo">
+                                <span id="userName">Abebe Kebede</span>
+                                <span>Ethipia</span>
+                                <span>⭐⭐⭐⭐⭐</span>
+                            </div>
+                        </div>
+                        <p>
+                            Commonly used for various metaphorical senses of star
+                            (e.g., for fame, success, excellence, reviews).
+                            Also used for emphasis or flair.
+                            Occasionally used for astronomical stars.
+                        </p>
+                    </div>
+                <?php
+                }
+                ?>
             </div>
-            <p>
-                get your ticket eisly, avoid the hustle of geting tickets
-                instade be rady for your flight.
-            </p>
-
-            <a href="#">
-                <button>discover places</button>
-            </a>
         </section>
 
-        <section id="sec2">
+        <footer>
+            <div id="bottom">
+                copy right reserved
+                &copy;
+                <?php
+                echo date("Y,M d");
+                ?>
 
-        </section>
-
-
+            </div>
+        </footer>
     </main>
+
+    <script src="./asset/js/index.js">
+
+    </script>
 </body>
 
 </html>

@@ -4,27 +4,32 @@
 }
 
 nav {
-  border: 1px solid gray;
-  padding: 10px 20px;
+  border-bottom: 1px solid gray;
+  padding: 10px 10vw;
   display: flex;
   align-items: center;
   position: relative;
-  font-family: sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 nav #part1 {
-  border: 1px solid red;
-  width: 30vw;
+  /* border: 1px solid red;*/
+  width: 20vw;
+  padding: 1vh 2vw;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 nav #part1 img {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin-right: 2vw;
+}
+nav #part1 a {
+  text-decoration: none;
+  color: black;
 }
 nav #part2 {
-  border: 1px solid red;
+  /*border: 1px solid red;*/
   width: 20vw;
   display: flex;
   justify-content: space-evenly;
@@ -32,7 +37,212 @@ nav #part2 {
   position: absolute;
   right: 10vw;
 }
-nav #part2 #flag {
+nav #part2 #flag img {
   height: 50px;
   width: 50px;
+}
+
+main {
+  font-family: Arial, Helvetica, sans-serif;
+}
+main #home {
+  display: flex;
+  position: relative;
+}
+main #home #sec1 {
+  width: 50%;
+  /*border:3px solid orange;*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 4vw;
+}
+main #home #sec1 #hero {
+  font-size: 3em;
+  font-weight: bold;
+}
+main #home #sec1 p {
+  line-height: 1.5em;
+  margin: 1vh 1vw;
+}
+main #home #sec1 a {
+  text-decoration: none;
+}
+main #home #sec1 a button {
+  background-color: seagreen;
+  border: none;
+  border-radius: 1vw;
+  padding: 1vh 1vw;
+  color: white;
+  size: 1.5em;
+  font-weight: bold;
+}
+main #home #sec1 a :hover {
+  background-color: rgb(77, 131, 100);
+}
+main #home #sec2 {
+  width: 50%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*border:  1px solid orangered;*/
+}
+main #home #sec2 #book {
+  width: 80%;
+  height: 70%;
+  border: 1px solid seagreen;
+  padding: 2vh 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 2vw;
+}
+main #home #sec2 #book #nav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid gray;
+  color: gray;
+  font-size: 2em;
+  margin-bottom: 2vh;
+}
+main #home #sec2 #book #nav span {
+  margin: 1px 2vw;
+}
+main #home #sec2 #book #nav span i {
+  margin-right: 2px;
+}
+main #home #sec2 #book form {
+  width: 90%;
+  height: -moz-fit-content;
+  height: fit-content;
+  /*border: 2px solid brown;*/
+}
+main #home #sec2 #book form #radio {
+  /*border: 2px solid yellow;*/
+  display: flex;
+  /*justify-content: center;*/
+  align-items: center;
+  font-size: 1.3em;
+}
+main #home #sec2 #book form #radio input {
+  margin-right: 2px;
+}
+main #home #sec2 #book form #radio label {
+  margin-right: 2vw;
+  color: gray;
+}
+main #home #sec2 #book form #dest {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2vh 0px;
+}
+main #home #sec2 #book form #dest input {
+  margin-right: 10px;
+  padding: 2px;
+  border: 2px solid gray;
+  border-radius: 10px;
+  width: 50%;
+  height: 5vh;
+  font-size: 1.2em;
+}
+main #home #sec2 #book form #dest input:focus {
+  border: 1px solid gray;
+}
+main #home #sec2 #book form #perinfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+main #home #sec2 #book form #perinfo input {
+  width: 90%;
+  height: 4vh;
+  padding: 2px;
+  margin: 2vh 2px;
+  border: 2px solid gray;
+  border-radius: 10px;
+  font-size: 1.2em;
+}
+main #home #sec2 #book form #perinfo button {
+  width: 70%;
+  height: 7vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 10px;
+  background-color: seagreen;
+  color: white;
+  font-size: 1.3em;
+}
+main #home #sec2 #book form #perinfo button i {
+  margin-left: 2px;
+}
+main #sec4 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 10vh 0px;
+}
+main #sec4 h2 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-family: sans-serif;
+  margin-bottom: 4vh;
+  text-transform: capitalize;
+  color: gray;
+}
+main #sec4 #container {
+  /*border: 5px solid yellowgreen;*/
+  width: 95%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+main #sec4 #container #testimonials {
+  width: 25vw;
+  min-height: 20vh;
+  padding: 10px 15px;
+  margin: 20px;
+  border: 1px solid gray;
+  display: flex;
+  flex-direction: column;
+}
+main #sec4 #container #testimonials div {
+  height: 50%;
+  /*border: 2px solid orange;*/
+  display: flex;
+  align-items: center;
+  margin-bottom: 2vh;
+}
+main #sec4 #container #testimonials div img {
+  width: 100px;
+  height: 100px;
+  border-radius: 5px;
+  margin-right: 2vw;
+}
+main #sec4 #container #testimonials div div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+main #sec4 #container #testimonials div div #userName {
+  font-size: 1.3em;
+}
+main footer {
+  background-color: rgb(24, 70, 44);
+  height: 20vh;
+  position: relative;
+}
+main footer #bottom {
+  position: absolute;
+  bottom: 2px;
+  left: 35%;
+  color: white;
+  font-size: 1.2em;
 }/*# sourceMappingURL=index.css.map */
