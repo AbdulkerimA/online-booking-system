@@ -48,6 +48,7 @@ nav #part2 #flag img {
   }
 }
 main {
+  overflow-x: hidden;
   font-family: Arial, Helvetica, sans-serif;
 }
 main #home {
@@ -304,7 +305,6 @@ main footer #bottom {
     font-size: 1.5em;
   }
   main #home #sec2 #book form #radio {
-    background-color: black;
     margin: 4vh 0px;
   }
   main #home #sec2 #book form #dest input {
