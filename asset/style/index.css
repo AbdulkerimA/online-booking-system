@@ -182,6 +182,50 @@ main #home #sec2 #book form #perinfo button {
 main #home #sec2 #book form #perinfo button i {
   margin-left: 2px;
 }
+main #sec3 h2 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-family: sans-serif;
+  margin: 10vh 0px;
+  text-transform: capitalize;
+  color: gray;
+  font-size: 3em;
+}
+main #sec3 #container {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  background-color: seashell;
+}
+main #sec3 #container #card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgba(182, 181, 181, 0.897);
+  border-radius: 2vw;
+  margin: 5vh 2.5vw;
+  position: relative;
+}
+main #sec3 #container #card img {
+  width: 25vw;
+  height: 40vh;
+  border-radius: 2vw 2vw 0px 0px;
+}
+main #sec3 #container #card #cityName {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-size: 1.4em;
+  margin-top: 2vh;
+}
+main #sec3 #container #card p {
+  position: relative;
+  width: 100%;
+  margin: 2vh 2vw;
+  left: 10vw;
+  color: rgb(153, 152, 152);
+}
 main #sec4 {
   display: flex;
   justify-content: center;

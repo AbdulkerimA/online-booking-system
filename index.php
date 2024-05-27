@@ -98,7 +98,22 @@ instade be rady for your flight -->
 
         <!-- explor popular destinations -->
         <section id="sec3">
+            <h2>explor popular destinations</h2>
+            <div id="container">
+                <?php
+                $city = ["Rio de Janeiro", "Dubai", "paris", "Florence", "Gondar", "Addis Abeba"];
+                for ($i = 0; $i <= 5; $i++) {
 
+                ?>
+                    <div id="card">
+                        <img src="./asset/images/city<?php echo $i; ?>.jpg" alt="city">
+                        <span id="cityName"><?php echo $city[$i] ?></span>
+                        <p>Round trip | 5 days</p>
+                    </div>
+                <?php
+                }
+                ?>
+            </div>
         </section>
 
         <!-- testimonials section -->
