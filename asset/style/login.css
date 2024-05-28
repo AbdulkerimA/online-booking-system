@@ -1,0 +1,140 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+#container {
+  position: absolute;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+}
+#container #loginArea {
+  width: 30%;
+  height: 90%;
+  background-color: white;
+  border-radius: 3vw;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+#container #loginArea h2 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5em;
+  color: seagreen;
+  margin: 5vh 0px;
+}
+#container #loginArea form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#container #loginArea form input {
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding-left: 1vw;
+  width: 80%;
+  height: 8vh;
+  margin: 2vh;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1em;
+}
+#container #loginArea form button {
+  width: 50%;
+  height: 6vh;
+  margin: 2vh 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1em;
+  font-weight: bold;
+  color: white;
+  background-color: seagreen;
+  border-radius: 1vw;
+  border: 1px solid seagreen;
+}
+#container #loginArea form button:hover {
+  background-color: rgba(24, 71, 45, 0.863);
+}
+#container #loginArea form #option {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /*border: 1px solid gray;*/
+  width: 90%;
+}
+#container #loginArea form #option div {
+  display: flex;
+  align-items: center;
+}
+#container #loginArea form #option div input {
+  width: 20px;
+  height: 20px;
+}
+#container #loginArea form #option div label {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1em;
+  text-transform: capitalize;
+  margin-right: 20px;
+  color: gray;
+}
+#container #loginArea form #option span {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1em;
+  text-transform: capitalize;
+}
+#container #loginArea form #option span a {
+  text-decoration: none;
+  color: seagreen;
+}
+#container #loginArea form #socialmedia {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#container #loginArea form #socialmedia span {
+  background-color: white;
+  color: gray;
+  text-transform: capitalize;
+  margin-top: 1vh;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1em;
+  z-index: 1;
+}
+#container #loginArea form #socialmedia div {
+  border-top: 1px solid gray;
+  width: 80%;
+  padding: 4vh 0px;
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+  bottom: 1.6vh;
+  z-index: 0;
+}
+#container #loginArea form #socialmedia div img {
+  width: 50px;
+  height: 50px;
+  padding: 5px;
+  border: 0.5px solid gray;
+  border-radius: 5px;
+}
+#container #loginArea form #signup {
+  border-top: 0.5px solid gray;
+  width: 100%;
+  padding-top: 2vh;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.3em;
+  color: gray;
+  display: flex;
+  justify-content: center;
+}
+#container #loginArea form #signup a {
+  color: seagreen;
+  text-decoration: none;
+}/*# sourceMappingURL=login.css.map */

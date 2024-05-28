@@ -32,6 +32,10 @@
 
     <!-- main sectiion of this page-->
     <main>
+        <!-- include login page -->
+        <?php
+        //include "./login.php";
+        ?>
         <div id="home">
             <section id="sec1">
                 <!-- hero section -->
