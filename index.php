@@ -23,7 +23,7 @@
                 <img src="./asset/images/ethiopia.png" alt="flg">
             </div>
 
-            <div class="signin">
+            <div class="signin" onclick="handleLogin()">
                 <i class="fa fa-user-o" aria-hidden="true"></i>
                 <span>login | signup</span>
             </div>
@@ -34,7 +34,7 @@
     <main>
         <!-- include login page -->
         <?php
-        //include "./login.php";
+        include "./login.php";
         ?>
         <div id="home">
             <section id="sec1">

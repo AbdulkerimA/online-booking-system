@@ -14,7 +14,8 @@
 </head>
 
 <body>
-    <div id="container">
+    <div id="logincontainer">
+        <div id="cover" onclick="deactivateLogin()"><!-- i am just a cover --></div>
         <div id="loginArea">
             <h2>login</h2>
             <form action="" method="post">
@@ -45,6 +46,7 @@
         </div>
     </div>
 </body>
+<script src="./asset/js/login.js"></script>
 <script src="./asset/js/login.js"></script>
 
 </html>

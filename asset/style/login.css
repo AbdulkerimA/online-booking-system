@@ -3,24 +3,37 @@
   margin: 0px;
 }
 
-#container {
-  position: absolute;
+#logincontainer {
   background-color: transparent;
+  position: absolute;
+  width: 100%;
+  height: 80%;
   display: flex;
   justify-content: center;
-  align-items: center;
-  background-color: transparent;
+  visibility: hidden;
+  z-index: 1;
 }
-#container #loginArea {
+#logincontainer #cover {
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(128, 128, 128, 0.151);
+  z-index: 1;
+}
+#logincontainer #loginArea {
   width: 30%;
-  height: 90%;
+  height: 100%;
+  margin-top: 10px;
+  border: 1px solid seagreen;
   background-color: white;
   border-radius: 3vw;
   display: flex;
   flex-direction: column;
   position: relative;
+  z-index: 2;
 }
-#container #loginArea h2 {
+#logincontainer #loginArea h2 {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -29,12 +42,12 @@
   color: seagreen;
   margin: 5vh 0px;
 }
-#container #loginArea form {
+#logincontainer #loginArea form {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-#container #loginArea form input {
+#logincontainer #loginArea form input {
   border: 1px solid gray;
   border-radius: 5px;
   padding-left: 1vw;
@@ -44,7 +57,7 @@
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1em;
 }
-#container #loginArea form button {
+#logincontainer #loginArea form button {
   width: 50%;
   height: 6vh;
   margin: 2vh 0px;
@@ -58,47 +71,47 @@
   border-radius: 1vw;
   border: 1px solid seagreen;
 }
-#container #loginArea form button:hover {
+#logincontainer #loginArea form button:hover {
   background-color: rgba(24, 71, 45, 0.863);
 }
-#container #loginArea form #option {
+#logincontainer #loginArea form #option {
   display: flex;
   justify-content: space-between;
   align-items: center;
   /*border: 1px solid gray;*/
   width: 90%;
 }
-#container #loginArea form #option div {
+#logincontainer #loginArea form #option div {
   display: flex;
   align-items: center;
 }
-#container #loginArea form #option div input {
+#logincontainer #loginArea form #option div input {
   width: 20px;
   height: 20px;
 }
-#container #loginArea form #option div label {
+#logincontainer #loginArea form #option div label {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1em;
   text-transform: capitalize;
   margin-right: 20px;
   color: gray;
 }
-#container #loginArea form #option span {
+#logincontainer #loginArea form #option span {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1em;
   text-transform: capitalize;
 }
-#container #loginArea form #option span a {
+#logincontainer #loginArea form #option span a {
   text-decoration: none;
   color: seagreen;
 }
-#container #loginArea form #socialmedia {
+#logincontainer #loginArea form #socialmedia {
   width: 80%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-#container #loginArea form #socialmedia span {
+#logincontainer #loginArea form #socialmedia span {
   background-color: white;
   color: gray;
   text-transform: capitalize;
@@ -107,34 +120,37 @@
   font-size: 1em;
   z-index: 1;
 }
-#container #loginArea form #socialmedia div {
+#logincontainer #loginArea form #socialmedia div {
   border-top: 1px solid gray;
   width: 80%;
   padding: 4vh 0px;
   display: flex;
   justify-content: space-evenly;
   position: relative;
-  bottom: 1.6vh;
+  bottom: 1.4vh;
   z-index: 0;
 }
-#container #loginArea form #socialmedia div img {
+#logincontainer #loginArea form #socialmedia div img {
   width: 50px;
   height: 50px;
   padding: 5px;
   border: 0.5px solid gray;
   border-radius: 5px;
 }
-#container #loginArea form #signup {
+#logincontainer #loginArea form #signup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-top: 0.5px solid gray;
   width: 100%;
-  padding-top: 2vh;
+  padding: 2vh 0px;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.3em;
   color: gray;
   display: flex;
   justify-content: center;
 }
-#container #loginArea form #signup a {
+#logincontainer #loginArea form #signup a {
   color: seagreen;
   text-decoration: none;
 }/*# sourceMappingURL=login.css.map */
