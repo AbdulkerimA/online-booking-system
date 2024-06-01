@@ -1,6 +1,4 @@
 <?php
-// check if user loged in in another tab
-//if yes redirect him to the home page
 ?>
 
 <!DOCTYPE html>
@@ -9,44 +7,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./asset/style/login.css">
-    <title>Document</title>
+    <title>SignUp</title>
+    <link rel="stylesheet" href="./asset/style/signup.css">
 </head>
 
 <body>
-    <div id="logincontainer">
-        <div id="cover" onclick="deactivateLogin()"><!-- i am just a cover --></div>
+    <div id="signupcontainer">
         <div id="loginArea">
-            <h2>login</h2>
+            <h2>signup</h2>
             <form action="" method="post">
                 <input type="text" name="uname" id="uname" placeholder="user name">
+                <input type="email" name="email" id="email" placeholder="email">
+                <input type="tel" name="tel" id="tel" placeholder="09--------">
                 <input type="password" name="pass" id="pss" placeholder="password">
-                <button type="submit">login</button>
+                <input type="password" name="confpass" id="conf" placeholder="confirm password">
+                <button type="submit">sign up</button>
                 <div id="option">
                     <div>
                         <input type="checkbox" name="save" id="savepass">
-                        <label for="savepass">Save password</label>
+                        <label for="savepass">agree to terms and conditions?</label>
                     </div>
-                    <span id="forget">
-                        <a href="#" target="_blank">forgate password?</a>
-                    </span>
                 </div>
                 <div id="socialmedia">
-                    <span> login with </span>
+                    <span> signup with </span>
                     <div>
                         <img src="./asset/images/search.png" alt="google">
                         <img src="./asset/images/meta.png" alt="meta">
                     </div>
                 </div>
 
-                <div id="signup">
-                    <span>dont have an account? <a href="./signup.php">signup</a></span>
+                <div id="login">
+                    <span>do you have an account? <a href="./index.php">login</a></span>
                 </div>
             </form>
         </div>
     </div>
 </body>
-<script src="./asset/js/login.js"></script>
-<script src="./asset/js/login.js"></script>
+<script src="./asset/js/index.js"></script>
 
 </html>

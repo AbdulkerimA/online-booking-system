@@ -3,25 +3,16 @@
   margin: 0px;
 }
 
-#logincontainer {
+#signupcontainer {
   background-color: transparent;
   position: absolute;
   width: 100%;
   height: 80%;
   display: flex;
   justify-content: center;
-  visibility: hidden;
   z-index: 1;
 }
-#logincontainer #cover {
-  position: absolute;
-  overflow: hidden;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(128, 128, 128, 0.308);
-  z-index: 1;
-}
-#logincontainer #loginArea {
+#signupcontainer #loginArea {
   width: 30%;
   height: 100%;
   margin-top: 10px;
@@ -33,33 +24,33 @@
   position: relative;
   z-index: 2;
 }
-#logincontainer #loginArea h2 {
+#signupcontainer #loginArea h2 {
   width: 100%;
   display: flex;
   justify-content: center;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.5em;
   color: seagreen;
-  margin: 5vh 0px;
+  margin: 3vh 0px;
 }
-#logincontainer #loginArea form {
+#signupcontainer #loginArea form {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-#logincontainer #loginArea form input {
+#signupcontainer #loginArea form input {
   border: 1px solid gray;
   border-radius: 5px;
   padding-left: 1vw;
   width: 80%;
-  height: 8vh;
-  margin: 2vh;
+  height: 4vh;
+  margin: 1vh;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1em;
 }
-#logincontainer #loginArea form button {
+#signupcontainer #loginArea form button {
   width: 50%;
-  height: 6vh;
+  height: 4vh;
   margin: 2vh 0px;
   display: flex;
   justify-content: center;
@@ -71,56 +62,56 @@
   border-radius: 1vw;
   border: 1px solid seagreen;
 }
-#logincontainer #loginArea form button:hover {
+#signupcontainer #loginArea form button:hover {
   background-color: rgba(24, 71, 45, 0.863);
 }
-#logincontainer #loginArea form #option {
+#signupcontainer #loginArea form #option {
   display: flex;
   justify-content: space-between;
   align-items: center;
   /*border: 1px solid gray;*/
   width: 90%;
 }
-#logincontainer #loginArea form #option div {
+#signupcontainer #loginArea form #option div {
   display: flex;
   align-items: center;
 }
-#logincontainer #loginArea form #option div input {
+#signupcontainer #loginArea form #option div input {
   width: 20px;
   height: 20px;
 }
-#logincontainer #loginArea form #option div label {
+#signupcontainer #loginArea form #option div label {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1em;
   text-transform: capitalize;
   margin-right: 20px;
   color: gray;
 }
-#logincontainer #loginArea form #option span {
+#signupcontainer #loginArea form #option span {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1em;
   text-transform: capitalize;
 }
-#logincontainer #loginArea form #option span a {
+#signupcontainer #loginArea form #option span a {
   text-decoration: none;
   color: seagreen;
 }
-#logincontainer #loginArea form #socialmedia {
+#signupcontainer #loginArea form #socialmedia {
   width: 80%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-#logincontainer #loginArea form #socialmedia span {
+#signupcontainer #loginArea form #socialmedia span {
   background-color: white;
   color: gray;
   text-transform: capitalize;
-  margin-top: 1vh;
+  margin-top: 1.5vh;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1em;
   z-index: 1;
 }
-#logincontainer #loginArea form #socialmedia div {
+#signupcontainer #loginArea form #socialmedia div {
   border-top: 1px solid gray;
   width: 80%;
   padding: 4vh 0px;
@@ -130,14 +121,14 @@
   bottom: 1.4vh;
   z-index: 0;
 }
-#logincontainer #loginArea form #socialmedia div img {
+#signupcontainer #loginArea form #socialmedia div img {
   width: 50px;
   height: 50px;
   padding: 5px;
   border: 0.5px solid gray;
   border-radius: 5px;
 }
-#logincontainer #loginArea form #signup {
+#signupcontainer #loginArea form #login {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -150,7 +141,7 @@
   display: flex;
   justify-content: center;
 }
-#logincontainer #loginArea form #signup a {
+#signupcontainer #loginArea form #login a {
   color: seagreen;
   text-decoration: none;
-}/*# sourceMappingURL=login.css.map */
+}/*# sourceMappingURL=signup.css.map */
