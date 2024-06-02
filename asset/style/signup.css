@@ -144,4 +144,11 @@
 #signupcontainer #loginArea form #login a {
   color: seagreen;
   text-decoration: none;
+}
+
+@media screen and (max-height: 889px) {
+  #signupcontainer {
+    background-color: black;
+    height: 90%;
+  }
 }/*# sourceMappingURL=signup.css.map */
