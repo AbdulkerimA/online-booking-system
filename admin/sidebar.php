@@ -8,7 +8,7 @@
     <!-- Sidebar - Brand -->
     <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
         <div class="sidebar-brand-icon rotate-n-15">
-            <i class="fas fa-laugh-wink"></i>
+            <i class="fa fa-user-o" aria-hidden="true"></i>
         </div>
         <div class="sidebar-brand-text mx-3">Admin</div>
     </a>
@@ -40,8 +40,8 @@
         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
                 <h6 class="collapse-header">Flight type</h6>
-                <a class="collapse-item" href="buttons.php">local</a>
-                <a class="collapse-item" href="cards.php">international</a>
+                <a class="collapse-item" href="local.php">local</a>
+                <a class="collapse-item" href="./international.php">international</a>
             </div>
         </div>
     </li>
@@ -98,6 +98,13 @@
                     <span>Charts</span></a>
             </li>*/
     ?>
+
+    <!-- Nav Item - planes -->
+    <li class="nav-item">
+        <a class="nav-link" href="./users.php">
+            <i class="fa fa-plane" aria-hidden="true"></i>
+            <span>aviliable planes</span></a>
+    </li>
 
     <!-- Nav Item - Tables -->
     <li class="nav-item">
