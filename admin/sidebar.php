@@ -1,7 +1,6 @@
 <?php
 
 ?>
-
 <!-- Sidebar -->
 <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
@@ -101,7 +100,7 @@
 
     <!-- Nav Item - planes -->
     <li class="nav-item">
-        <a class="nav-link" href="./users.php">
+        <a class="nav-link" href="./planes.php">
             <i class="fa fa-plane" aria-hidden="true"></i>
             <span>aviliable planes</span></a>
     </li>

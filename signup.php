@@ -1,4 +1,26 @@
 <?php
+include "./inc/includes.inc.php";
+$error = null;
+if (isset($_GET['error'])) {
+    $error = $_GET['error'];
+}
+
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    // CHECK IF ANY OF THE FILDS ARE EMPTY
+    if (!empty($_POST['uname'] && $_POST['email'] && $_POST['tel'] && $_POST['pass'] && $_POST['confpass'])) {
+        $user = htmlspecialchars($_POST['uname']);
+        $email = htmlspecialchars($_POST['email']);
+        $tel = htmlentities($_POST['tel']);
+        $pass = htmlspecialchars($_POST['pass']);
+        $confpass = htmlspecialchars($_POST['confpass']);
+
+        $controllObj = new Controller();
+        $controllObj->register($user, $pass, $confpass, $email, $tel);
+    } else {
+        // if any of the filds are empty display this message
+        $error = "you must insert all the information needed";
+    }
+}
 ?>
 
 <!DOCTYPE html>
@@ -16,6 +38,7 @@
         <div id="loginArea">
             <h2>signup</h2>
             <form action="" method="post">
+                <span><?php echo $error; ?></span>
                 <input type="text" name="uname" id="uname" placeholder="user name">
                 <input type="email" name="email" id="email" placeholder="email">
                 <input type="tel" name="tel" id="tel" placeholder="09--------">

@@ -1,6 +1,20 @@
 <?php
-// check if user loged in in another tab
-//if yes redirect him to the home page
+
+include_once "./inc/includes.inc.php";
+
+$error = null;
+
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    if (!empty($_POST['uname']) && !empty($_POST['pass'])) {
+        $luname = htmlspecialchars($_POST['uname']);
+        $lpass = htmlspecialchars($_POST['pass']);
+
+        $viewobj = new view();
+        $viewobj->login($luname, $lpass);
+    } else {
+        $error = "user name or password is empty";
+    }
+}
 ?>
 
 <!DOCTYPE html>
@@ -10,7 +24,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./asset/style/login.css">
-    <title>Document</title>
+    <title>login</title>
 </head>
 
 <body>
@@ -18,9 +32,12 @@
         <div id="cover" onclick="deactivateLogin()"><!-- i am just a cover --></div>
         <div id="loginArea">
             <h2>login</h2>
-            <form action="" method="post">
+            <form action="./index.php" method="post">
                 <input type="text" name="uname" id="uname" placeholder="user name">
                 <input type="password" name="pass" id="pss" placeholder="password">
+                <span id="error">
+                    <?php echo $error != null ?  $error  : ""; ?>
+                </span>
                 <button type="submit">login</button>
                 <div id="option">
                     <div>

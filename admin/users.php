@@ -1,3 +1,13 @@
+<?php
+session_start();
+include_once "../inc/admin.inc.php";
+$viewobj = new View();
+$users = $viewobj->allUsers();
+
+//for test only
+//var_dump($users);
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -67,6 +77,7 @@
                                             <th>email</th>
                                             <th>phone number</th>
                                             <th>Address</th>
+                                            <th>reservationNumber</th>
                                         </tr>
                                     </thead>
                                     <tfoot>
@@ -76,19 +87,21 @@
                                             <th>email</th>
                                             <th>phone number</th>
                                             <th>Address</th>
+                                            <th>reservationNumber</th>
                                         </tr>
                                     </tfoot>
                                     <tbody>
                                         <?php
-                                        for ($i = 0; $i < 100; $i++) {
+                                        foreach ($users as $user) {
 
                                         ?>
                                             <tr>
-                                                <td>Tiger Nixon</td>
-                                                <td>System Architect</td>
-                                                <td>Edinburgh</td>
-                                                <td>61</td>
-                                                <td>2011/04/25</td>
+                                                <td><?php echo $user['firstName']; ?></td>
+                                                <td><?php echo $user['lastName']; ?></td>
+                                                <td><?php echo $user['email']; ?></td>
+                                                <td><?php echo $user['tel']; ?></td>
+                                                <td><?php echo $user['city']; ?></td>
+                                                <td><?php echo $user['reservationNumber']; ?></td>
                                             </tr>
                                         <?php
                                         }

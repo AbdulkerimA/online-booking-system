@@ -2,7 +2,7 @@
 session_start();
 include_once "../inc/admin.inc.php";
 $viewobj = new View();
-$reservations = $viewobj->allReservations();
+$planes = $viewobj->allPlanes();
 
 //for test only
 //var_dump($users);
@@ -60,42 +60,36 @@ $reservations = $viewobj->allReservations();
                 <div class="container-fluid">
 
                     <!-- Page Heading -->
-                    <h1 class="h3 mb-2 text-gray-800">Reservations Data</h1>
+                    <h1 class="h3 mb-2 text-gray-800">airplanes</h1>
 
                     <!-- DataTales Example -->
                     <div class="card shadow mb-4">
                         <div class="card-header py-3">
-                            <h6 class="m-0 font-weight-bold text-primary">all reservations data</h6>
+                            <h6 class="m-0 font-weight-bold text-primary">all aviliable planes</h6>
                         </div>
                         <div class="card-body">
                             <div class="table-responsive">
                                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                                     <thead>
                                         <tr>
-                                            <th>Reservation number</th>
-                                            <th>Reservation Date</th>
-                                            <th>Payment Method</th>
-                                            <th>Flight Number</th>
+                                            <th>Plane ID</th>
+                                            <th>number of seats</th>
                                         </tr>
                                     </thead>
                                     <tfoot>
                                         <tr>
-                                            <th>Reservation number</th>
-                                            <th>Reservation Date</th>
-                                            <th>Payment Method</th>
-                                            <th>Flight Number</th>
+                                            <th>Plane ID</th>
+                                            <th>number of seats</th>
                                         </tr>
                                     </tfoot>
                                     <tbody>
                                         <?php
-                                        foreach ($reservations as $reserv) {
+                                        foreach ($planes as $plane) {
 
                                         ?>
                                             <tr>
-                                                <td><?php echo $reserv['Rnum']; ?></td>
-                                                <td><?php echo $reserv['rDate']; ?></td>
-                                                <td><?php echo $reserv['payment']; ?></td>
-                                                <td><?php echo $reserv['fnum']; ?></td>
+                                                <td><?php echo $plane['id']; ?></td>
+                                                <td><?php echo $plane['seats']; ?></td>
                                             </tr>
                                         <?php
                                         }

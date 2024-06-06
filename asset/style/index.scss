@@ -209,6 +209,7 @@ main{
         }
         #container{
             width: 100%;
+            height: fit-content;
             display: flex;
             justify-content: space-evenly;
             flex-wrap: wrap;
@@ -247,6 +248,7 @@ main{
         justify-content: center;
         flex-direction: column;
         margin: 10vh 0px;
+        margin-top: 30vh;
         h2{
             width: 100%;
             display: flex;

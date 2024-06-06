@@ -1,3 +1,33 @@
+<?php
+
+session_start();
+
+$erroronSearch = null;
+
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    include_once "./inc/includes.inc.php";
+    // CHECK IF ANY OF THE FILDS ARE EMPTY
+    if (!empty($_POST['departure'] && $_POST['destination'] && $_POST['depatrureDate'] && $_POST['email'] && $_POST['passengers'])) {
+        $depfrom = htmlspecialchars($_POST['departure']);
+        $destination = htmlspecialchars($_POST['destination']);
+        $schedule = htmlentities($_POST['depatrureDate']);
+
+        $viewObj = new View();
+        $flights = $viewObj->aviliableFlights($depfrom, "2024-06-02");
+
+        //for test only
+        //var_dump($flights);
+    } else {
+        // if any of the filds are empty display this message
+        $erroronSearch = "you must insert all the information needed";
+    }
+}
+
+?>
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,25 +40,9 @@
 
 <body>
     <!-- nav bar -->
-    <nav>
-        <div id="part1">
-            <img src="./asset/images/plane.png" alt="logo">
-            <a href="">home</a>
-            <a href="">about us</a>
-            <a href="">help</a>
-        </div>
-
-        <div id="part2">
-            <div id="flag">
-                <img src="./asset/images/ethiopia.png" alt="flg">
-            </div>
-
-            <div class="signin" onclick="handleLogin()">
-                <i class="fa fa-user-o" aria-hidden="true"></i>
-                <span>login | signup</span>
-            </div>
-        </div>
-    </nav>
+    <?php
+    include "./nav.php";
+    ?>
 
     <!-- main sectiion of this page-->
     <main>
@@ -70,7 +84,8 @@ instade be rady for your flight -->
                     </div>
 
                     <!-- -->
-                    <form action="" method="post">
+                    <form action="./index.php" method="post">
+                        <span><?php echo $erroronSearch; ?></span>
                         <div id="radio">
                             <input type="radio" name="oneWay" id="oneWay">
                             <label for="oneWay">one-way</label>
@@ -150,14 +165,9 @@ instade be rady for your flight -->
         </section>
 
         <footer>
-            <div id="bottom">
-                copy right reserved
-                &copy;
-                <?php
-                echo date("Y,M d");
-                ?>
-
-            </div>
+           <?php
+           include "./footer.php";
+           ?>
         </footer>
     </main>
 

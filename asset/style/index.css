@@ -200,6 +200,8 @@ main #sec3 h2 {
 }
 main #sec3 #container {
   width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
@@ -237,6 +239,7 @@ main #sec4 {
   justify-content: center;
   flex-direction: column;
   margin: 10vh 0px;
+  margin-top: 30vh;
 }
 main #sec4 h2 {
   width: 100%;
