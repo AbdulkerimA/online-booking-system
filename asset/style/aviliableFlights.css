@@ -1,0 +1,71 @@
+* {
+  padding: 2vh 2vw;
+  margin: 0px;
+  color: gray;
+}
+
+#cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+#cont #flightcover {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 0;
+  background-color: rgba(168, 168, 168, 0.267);
+}
+#cont #box {
+  border-radius: 2vh;
+  background-color: white;
+  width: 80%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+#cont #box #minibox {
+  display: flex;
+  flex-wrap: wrap;
+}
+#cont #box #minibox table {
+  border-collapse: collapse;
+  border: 1px solid gray;
+}
+#cont #box #minibox table thead {
+  border: 1px solid gray;
+  background-color: rgb(178, 178, 255);
+}
+#cont #box #minibox table thead th {
+  border: 1px solid gray;
+}
+#cont #box #minibox table tr {
+  border: 1px solid gray;
+}
+#cont #box #minibox table tr td {
+  border: 1px solid gray;
+}
+#cont #box form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#cont #box form input {
+  margin: 2vh 0px;
+}
+#cont #box form button {
+  border: 1px solid rgb(178, 178, 255);
+  background-color: rgb(152, 152, 255);
+  width: 10em;
+  color: white;
+  border-radius: 1vh;
+}
+#cont #box form button:hover {
+  background-color: rgb(178, 178, 255);
+}/*# sourceMappingURL=aviliableFlights.css.map */
