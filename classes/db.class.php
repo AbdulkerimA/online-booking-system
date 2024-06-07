@@ -2,7 +2,7 @@
 
 class Db
 {
-    private $host = "192.168.0.7";
+    private $host = "localhost";
     private $user = "root";
     private $dbName = "frs";
 

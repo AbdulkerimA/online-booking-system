@@ -46,7 +46,7 @@ nav{
         }
     }
 }
-@media  screen and (max-width:1300px){
+@media  screen and (max-width:1200px){
     nav{
         #part1{
             a{
@@ -209,6 +209,7 @@ main{
         }
         #container{
             width: 100%;
+            height: fit-content;
             display: flex;
             justify-content: space-evenly;
             flex-wrap: wrap;
@@ -247,6 +248,7 @@ main{
         justify-content: center;
         flex-direction: column;
         margin: 10vh 0px;
+        margin-top: 30vh;
         h2{
             width: 100%;
             display: flex;
@@ -307,7 +309,7 @@ main{
             font-size: 1.2em;
         }
     }
-    @media  screen and (max-width:1366px){
+    @media  screen and (max-height:899px){
         #home{
             #sec2{
                 #book{

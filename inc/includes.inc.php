@@ -6,7 +6,7 @@ function load($obj)
 {
     $path = "./classes/";
     $ext = ".class.php";
-    $file = $path + $obj + $ext;
+    $file = $path . $obj . $ext;
 
     if (!file_exists($file)) {
         return false;
