@@ -85,4 +85,19 @@ class Model extends Db
             return "query error" . $this->conn()->error;
         }
     }
+
+    // generate tickets
+    protected function generate($depFrom, $dest, $planeid, $depDate, $return, $tickets, $price)
+    {
+        $sqlstmt = "INSERT INTO `flight`(`plane_id`, `arivalDateTime`, `departureDateTime`, 
+        `departureFrom`, `destination`, `tickets`, `price`) 
+        VALUES ('$planeid','$return','$depDate','$depFrom',
+         '$dest','$tickets','$price')";
+
+        if ($this->conn()->query($sqlstmt)) {
+            return "successfuly generated";
+        } else {
+            return "Query Error" . $this->conn()->error;
+        }
+    }
 }

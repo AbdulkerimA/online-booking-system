@@ -4,7 +4,7 @@ class Controller extends Model
 {
     public function register($uname, $pass, $conf, $email, $tel)
     {
-        // before storing a phone num we have to check the length
+        // before storing a phone num we have to check the length 
         if (strlen($tel) < 10) {
             $error = "phnone number must be atleast 10 digits";
             header("Location:./signup.php?error=$error");
@@ -28,5 +28,12 @@ class Controller extends Model
                 }
             }
         }
+    }
+
+    public function generateTickets($depFrom, $dest, $planeid, $depDate, $return, $tickets, $price, $filename)
+    {
+        $dbResult = $this->generate($depFrom, $dest, $planeid, $depDate, $return, $tickets, $price);
+
+        header("Loction:./$filename.php?error=$dbResult");
     }
 }
