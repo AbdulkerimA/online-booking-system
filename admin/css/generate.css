@@ -1,0 +1,31 @@
+#error{
+    color: orangered;
+}
+#noerror{
+    color: seagreen;
+}
+#generate{
+    display: flex;
+    flex-direction: column;
+    align-items:center ;
+    justify-content: center;
+}
+
+#generate input{
+    margin: 1vh 1vw;
+    padding: 2em;
+    border:1px solid #4e73df;
+    border-radius: 1em;
+    height: 2em;
+    width: 20em;
+}
+
+#generate button{
+    background-color: #4e73df;
+    color: #ffffff;
+    width: 10em;
+    height: 3em;
+    border: none;
+    border-radius:1em;
+    margin-top: 1em;
+}
