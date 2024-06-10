@@ -15,7 +15,7 @@
             <div id="minibox">
                 <table>
                     <thead>
-                        <th>Flight Number</th>
+                        <th>Flight Number</th> 
                         <th>Departure From</th>
                         <th>Destination </th>
                         <th>Departure Date</th>
